@@ -1,33 +1,98 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+background-color: rgb(94, 24, 151);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.cointainer_1 h1{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+background-color: rgb(142, 62, 196);
+height: 80px;
+top: -22px;
+z-index: -1;
+
+box-shadow: 0 2px 0 rgb(43, 1, 71);
+
+
+}
+.top_app {
+position: absolute;
+left: 70px;
+top: 10px;
+  color: rgb(230, 226, 231);
+
+}
+
+.headerpage .menu {
+
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+font-size: 20px;
+  margin: 0 auto;
+  padding: 0px 400px;
+  justify-content:space-between;
+  
+
+
+}
+
+.headerpage .menu li {
+color: rgb(217, 211, 245);
+text-decoration: none;
+  list-style-type: none;
+
+}
+
+
+.headerpage .login{
+position: absolute;
+top: 30px;
+right: 50px;
+
+}
+
+.headerpage .login{
+position: absolute;
+top: 15px;
+width: 150px;
+height: 50px;
+border-radius: 150px;
+border: none;
+background-color:  #3d146b ;
+color: aliceblue;
+
+}
+.headerpage .menu a:hover{
+
+color:#3d146b ;
+
+transition: 0.4s;
+
+
+}
+
+.headerpage .menu .home:hover{
+  transform: scale(3);
+}
+
+
+@keyframes menu {
+
+  0%{
+color: rgb(217, 211, 245);
+
+
   }
+  100%{
+   color:  #3d146b ;
+
+  }
+  
 }
