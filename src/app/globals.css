@@ -5,17 +5,22 @@ body {
 background-color: rgb(94, 24, 151);
 }
 
-.cointainer_1 h1{
-  position: absolute;
-  left: 0px;
-  right: 0px;
-background-color: rgb(142, 62, 196);
-height: 80px;
-top: -22px;
+.login > .cointainer_1 h1{
+  position: flex;
+  align-items: center;
+ 
+  margin: 70px auto;
+
+
+
+background-color:  rgb(174, 155, 187);
+width: 450px;
+height: 450px;
+
 z-index: -1;
 
-box-shadow: 0 2px 0 rgb(43, 1, 71);
-
+box-shadow: 0 0 100px rgb(43, 1, 71);
+border-radius: 50px;
 
 }
 .top_app {
@@ -26,73 +31,63 @@ top: 10px;
 
 }
 
-.headerpage .menu {
-
-  display: flex;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
+.login_1{
+  position: absolute;
+  left:0;
+  right: 0; 
+  top: 400px;
+  width: 150px;
+ height: 45px;
+  margin:auto;
+ background-color: #c20aa9;
+ font-family: "Oswald", sans-serif;
 font-optical-sizing: auto;
-font-weight: 700;
 font-style: normal;
-font-size: 20px;
-  margin: 0 auto;
-  padding: 0px 400px;
-  justify-content:space-between;
-  
-
-
-}
-
-.headerpage .menu li {
-color: rgb(217, 211, 245);
-text-decoration: none;
-  list-style-type: none;
-
-}
-
-
-.headerpage .login{
-position: absolute;
-top: 30px;
-right: 50px;
-
-}
-
-.headerpage .login{
-position: absolute;
-top: 15px;
-width: 150px;
-height: 50px;
-border-radius: 150px;
-border: none;
-background-color:  #3d146b ;
+font-size: 16px;
+ cursor: pointer;
+ border: none ;
+ border-radius: 100px;
+animation: butt 1.9s ease-in-out infinite alternate;
 color: aliceblue;
 
-}
-.headerpage .menu a:hover{
-
-color:#3d146b ;
-
-transition: 0.4s;
-
 
 }
 
-.headerpage .menu .home:hover{
-  transform: scale(3);
+.login_1:hover{
+
+  transform: scale(1.05);
+
+
+  transition: 0.3s;
+
+
+}
+
+.login .form{
+
+  position: absolute;
+  
+  margin:auto;
+
 }
 
 
-@keyframes menu {
+
+@keyframes butt {
 
   0%{
-color: rgb(217, 211, 245);
 
+   background-color:  #3474ff ;
+   box-shadow: 0px 0px 25px #3474ff;
 
   }
+  50%{
+    background-color:  #c20aa9;
+    box-shadow: 0px 0px 25px #c20aa9;
+  }
   100%{
-   color:  #3d146b ;
-
+    background-color:  #ff0080;
+    box-shadow: 0px 0px 25px #ff0080;
   }
   
 }

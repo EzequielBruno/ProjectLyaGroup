@@ -1,5 +1,45 @@
-import Image from "next/image";
+"use client"
 
+import Image from "next/image";
+function click(){
+
+const butt = document.getElementById('loginb')
+if(butt != null){
+
+
+
+ 
+  butt.style.width = '120px';
+  butt.style.height = '40px';
+  butt.style.top = '405px';
+  butt.style.transform = 'transition: 0.2s';
+
+
+
+  setTimeout(() => {
+    
+    butt.style.width = '150px';
+    butt.style.height = '45px';
+    butt.style.top = '400px';
+  butt.style.transform = 'transition: 0.3s';
+
+  }, 100);
+ 
+  
+  
+  
+
+
+
+
+/*
+setTimeout( butt.style.width = '150px', 1000);
+  setTimeout( butt.style.height = '45px', 1000);*/ 
+ 
+
+}
+
+}
 export default function Home() {
   return (
     <html lang="en">
@@ -18,19 +58,18 @@ export default function Home() {
                    {/* <img className="logo" src{logo}/>
                                   aqui será colocada a logo do app */}
              </div>
-             <div className="headerpage">
-                   <div className="menu">
-                       <ul> <li><a className="home" href="#">início</a></li>
-                            <li><a href="#">funcionalidades</a></li>
-                            <li><a href="#">para o futuro</a></li>
-                            <li><a href="#">sobre</a></li>
-                       </ul>
-                   </div>
-                   <button className="login">Login</button>
+             <button id="loginb"className="login_1" onClick={click}>Login</button>
+             <div className="login">
+                 <div className="cointainer_1">
+                     <h1> </h1>
+                     <div className="form">
+                           <input type="text" id="token" ></input>
+                     </div>
+                 </div>
+                 
              </div>
-             <div className="cointainer_1">
-                   <h1> </h1>
-             </div>
+           
+         
     </body>
     </html>
   );
